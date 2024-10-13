@@ -1,5 +1,8 @@
 Kale: Web3 Sustainability Rewards Program
+
 Kale is a blockchain-powered sustainability rewards platform that lets users earn XLM tokens through sustainable actions such as purchasing goods online from eco-friendly stores (e.g. Patagonia) or going to local stores. These tokens can be used to fund green projects like reforestation efforts. Using Stellar's fast, low-cost, and transparent blockchain, Kale ensures that every contribution goes directly toward supporting eco-friendly initiatives.
+
+<img width="1470" alt="Screenshot 2024-10-13 at 12 50 12" src="https://github.com/user-attachments/assets/bbfb8507-9208-4e59-bfa8-d606280642cf">
 
 Features
 Earn Rewards: Users earn XLM tokens when they shop at partner sustainability-focused businesses.
@@ -18,16 +21,18 @@ Low Transaction Fees: Stellar’s minimal transaction costs allow microtransacti
 Soroban Smart Contracts: Smart contracts written in Rust allow automatic execution of project funding and refunds. This removes intermediaries and enhances trust between users and projects.
 Global Accessibility: Stellar enables global payments and cross-border transactions, making it easy for people around the world to participate in sustainability efforts.
 Decentralized Trust: With the Stellar network's built-in decentralization, no single entity controls the system, ensuring that all participants can rely on the transparent and fair management of funds.
+
 How It Works
 1. Shop and Earn
 Users earn XLM tokens as rewards by shopping at our partner online stores that align with sustainability values (e.g., Patagonia).
 2. Fund Green Projects
 Green projects like reforestation or renewable energy initiatives are posted on the Kale platform.
 Each project is initiated with a goal and a recipient. The funds are held in a Soroban smart contract.
-3. Automatic Funding
+<img width="1467" alt="Screenshot 2024-10-13 at 12 50 45" src="https://github.com/user-attachments/assets/cab99ee6-e2fc-467d-b64d-787b3552229d">
+4. Automatic Funding
 Once the funding goal is reached, the smart contract automatically transfers the funds to the project.
 If the goal isn’t reached within the specified timeframe, the smart contract triggers an automatic refund to all contributors.
-4. Transparent Tracking
+5. Transparent Tracking
 Users can track their contributions, funding progress, and project completion in real-time via the Stellar blockchain, ensuring full transparency and confidence.
 Project Setup
 
