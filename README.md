@@ -39,14 +39,7 @@ Access to the Stellar Testnet for development
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/kale-sustainability-rewards.git
-cd kale-sustainability-rewards
 Install dependencies for the front-end:
-
-bash
-Copy code
 npm install
 npm run dev
 
