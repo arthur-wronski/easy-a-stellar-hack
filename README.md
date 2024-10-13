@@ -1,1 +1,62 @@
-hello world
+Kale: Web3 Sustainability Rewards Program
+Kale is a blockchain-powered sustainability rewards platform that lets users earn XLM tokens through sustainable actions such as purchasing goods online from eco-friendly stores (e.g. Patagonia) or going to local stores. These tokens can be used to fund green projects like reforestation efforts. Using Stellar's fast, low-cost, and transparent blockchain, Kale ensures that every contribution goes directly toward supporting eco-friendly initiatives.
+
+Features
+Earn Rewards: Users earn XLM tokens when they shop at partner sustainability-focused businesses.
+Support Green Projects: Fund reforestation, renewable energy, or other green projects by using the tokens you’ve earned.
+Automated Smart Contracts: Green project funding is managed via Stellar Soroban smart contracts, ensuring transparency and trust.
+Projects are initiated with a goal and recipient.
+Tokens are automatically released to the recipient when the funding goal is met.
+If the goal is not met, users are automatically refunded their contributions.
+Transparency and Trust: Every transaction is recorded on the Stellar blockchain, ensuring full transparency and immutability.
+
+Why Stellar Blockchain?
+Kale leverages the Stellar blockchain for several key reasons:
+
+Fast Transactions: Stellar provides near-instant settlement (3-5 seconds), ensuring rewards are distributed promptly, and green projects are funded efficiently.
+Low Transaction Fees: Stellar’s minimal transaction costs allow microtransactions without eating into the rewards or project funding.
+Soroban Smart Contracts: Smart contracts written in Rust allow automatic execution of project funding and refunds. This removes intermediaries and enhances trust between users and projects.
+Global Accessibility: Stellar enables global payments and cross-border transactions, making it easy for people around the world to participate in sustainability efforts.
+Decentralized Trust: With the Stellar network's built-in decentralization, no single entity controls the system, ensuring that all participants can rely on the transparent and fair management of funds.
+How It Works
+1. Shop and Earn
+Users earn XLM tokens as rewards by shopping at our partner online stores that align with sustainability values (e.g., Patagonia).
+2. Fund Green Projects
+Green projects like reforestation or renewable energy initiatives are posted on the Kale platform.
+Each project is initiated with a goal and a recipient. The funds are held in a Soroban smart contract.
+3. Automatic Funding
+Once the funding goal is reached, the smart contract automatically transfers the funds to the project.
+If the goal isn’t reached within the specified timeframe, the smart contract triggers an automatic refund to all contributors.
+4. Transparent Tracking
+Users can track their contributions, funding progress, and project completion in real-time via the Stellar blockchain, ensuring full transparency and confidence.
+Project Setup
+
+To set up the project locally, follow these steps:
+
+Prerequisites
+Node.js and npm for front-end interactions
+Access to the Stellar Testnet for development
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/kale-sustainability-rewards.git
+cd kale-sustainability-rewards
+Install dependencies for the front-end:
+
+bash
+Copy code
+npm install
+npm run dev
+
+To interact with the Soroban smart contracts, use the Stellar Soroban CLI and testnet for testing transactions and funding scenarios.
+
+Why Blockchain?
+Using the Stellar blockchain for Kale offers several advantages:
+
+Decentralization: Blockchain ensures that no central entity controls the rewards system or project funding. This builds trust among users and guarantees fair management of funds.
+Transparency: Every transaction, whether it's earning rewards or funding a green project, is recorded and verifiable on the Stellar blockchain. This transparency is essential for promoting accountability in sustainability efforts.
+Smart Contract Automation: Soroban smart contracts remove the need for intermediaries and ensure that funds are only released when conditions (e.g., project goals) are met. This guarantees that contributions are used effectively.
+Efficiency: Blockchain-based automation minimizes the administrative overhead, allowing more resources to go directly towards green projects instead of being spent on management and fees.
+Global Reach: Blockchain allows Kale to operate across borders without the friction of traditional payment systems, making it accessible to a global audience.
