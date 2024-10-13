@@ -9,7 +9,7 @@ import tokenImage from "@/assets/file.png";
 
 function App() {
   const [address, setAddress] = useState('Connect Wallet');
-  const [balance, setBalance] = useState('Connect to see Balance');
+  const [balance, setBalance] = useState('Link for balance');
 
   const handleFreighterConnect = async () => {
     try {

@@ -3,13 +3,13 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/comp
 import { Progress } from "@/components/ui/progress";
 import reforestation from '@/assets/reforestation.png';
 import ocean from '@/assets/ocean.png';
-import energy from '@/assets/energy.png';
+import chris from '@/assets/chris.png';
 import { useState } from 'react';
 import { isConnected, requestAccess, signTransaction, getAddress } from "@stellar/freighter-api";
-import * as StellarSdk from '@stellar/stellar-sdk'; // Use correct imports from stellar-sdk
+import * as StellarSdk from '@stellar/stellar-sdk';
 
 // Project data
-const projectsData = [
+const initialProjectsData = [
   {
     id: 1,
     name: 'Reforestation Project',
@@ -35,7 +35,7 @@ const projectsData = [
     current: 15000,
     description: 'Fund renewable energy projects',
     link: 'https://cleanenergy.com',
-    image: energy,
+    image: chris,
   },
 ];
 
@@ -79,6 +79,7 @@ const Modal = ({ project, onClose, onFund }) => {
 
 // Main FundProgress Component
 export function FundProgress() {
+  const [projectsData, setProjectsData] = useState(initialProjectsData);
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleCardClick = (project) => {
@@ -148,8 +149,8 @@ export function FundProgress() {
 
         // Sign the transaction using Freighter
         const signedTransactionResponse = await signTransaction(xdr, {
-            networkPassphrase:  StellarSdk.Networks.TESTNET, // Specify the network
-            address: userAddress.address, // Optional: specify the user's address
+            networkPassphrase:  StellarSdk.Networks.TESTNET,
+            address: userAddress.address,
         });
 
         // Check for errors in the signing process
@@ -168,13 +169,21 @@ export function FundProgress() {
         console.log('Transaction successful!', response);
         alert('Transaction successful!');
 
+        // Update the project's current amount after successful transaction
+        setProjectsData(prevProjects =>
+          prevProjects.map(project => {
+            if (project.id === projectId) {
+              return { ...project, current: project.current + parseFloat(amountXLM) };
+            }
+            return project;
+          })
+        );
+
     } catch (error) {
         console.error("Transaction error:", error);
         alert(`Transaction failed! ${error.message}`);
     }
-};
-
-
+  };
 
   return (
     <div className="flex flex-wrap justify-center gap-6">
