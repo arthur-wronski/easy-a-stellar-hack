@@ -2,7 +2,7 @@ Kale: Web3 Sustainability Rewards Program
 
 Kale is a blockchain-powered sustainability rewards platform that lets users earn XLM tokens through sustainable actions such as purchasing goods online from eco-friendly stores (e.g. Patagonia) or going to local stores. These tokens can be used to fund green projects like reforestation efforts. Using Stellar's fast, low-cost, and transparent blockchain, Kale ensures that every contribution goes directly toward supporting eco-friendly initiatives.
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/exampleVideoID](https://streamable.com/j215jh)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Link Text](https://www.youtube.com/watch?v=exampleVideoID](https://streamable.com/j215jh](https://streamable.com/j215jh)
 
 
 Features
